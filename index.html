@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <section>
+  <link rel="stylesheet" href="./main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="./main.js"></script>
+  
+  <!-- 전역변수 -->
+
+  
+  <script src="node_modules/colorthief/dist/color-thief.umd.js"></script>
+  <script>
+    const colorThief = new ColorThief();
+    const img = document.querySelector('img');
+
     
+    if (img.complete) {
+      colorThief.getColor(img);
+    } else {
+      image.addEventListener('load', function () {
+        colorThief.getColor(img);
+      });
+    }
+  </script>
+
+  
+
+<title>랄랄루</title>
+
+</head>
+
+<body>
+  <div class="logo">뭐하세요 그리세요</div>
+  <canvas class="canvas"></canvas>
+
+  <!-- 리셋,업로드,세이브 버튼 -->
+  <div class="b_button">
+    <button class="material-icons">refresh</button>
+    <button class="material-icons">upload</button>
+    <button class="material-icons">save</button>
+  </div>
+
+  <!-- 색깔 버튼 -->
+  <section class="c_buttons">
+    <div class="colors">
+      <button class="material-icons" style="color:red;">color_lens</button>
+      <button class="material-icons" style="color:orange;">color_lens</button>
+      <button class="material-icons" style="color:rgb(226, 226, 59);">color_lens</button>
+      <button class="material-icons" style="color:green;">color_lens</button>
+      <button class="material-icons" style="color:blue;">color_lens</button>
+      <button class="material-icons" style="color:navy;">color_lens</button>
+      <button class="material-icons" style="color:purple;">color_lens</button>
+    </div>
   </section>
+
 </body>
+
 </html>
