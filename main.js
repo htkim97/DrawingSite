@@ -8,7 +8,7 @@ const colors=document.querySelectorAll(".colors");
 let drawing = false; 
 
 //  굵기, 선, 색깔
-ctx.lineWidth=10;
+ctx.lineWidth=30;
 ctx.lineCap="round";
 ctx.strokeStyle="black";
 
@@ -50,3 +50,8 @@ colors.forEach(colors=>{
   colors.addEventListener("click", changeColor);
 })
 
+
+// 요소 삭제 버튼
+const remove=()=>{
+  document.getElementById("").remove();
+}
