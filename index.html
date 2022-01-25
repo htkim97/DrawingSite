@@ -7,35 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./main.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="./main.js"></script>
+  
   
   <!-- 전역변수 -->
 
   
-  <script src="node_modules/colorthief/dist/color-thief.umd.js"></script>
-  <script>
-    const colorThief = new ColorThief();
-    const img = document.querySelector('img');
-
-    
-    if (img.complete) {
-      colorThief.getColor(img);
-    } else {
-      image.addEventListener('load', function () {
-        colorThief.getColor(img);
-      });
-    }
-  </script>
-
-  
-
 <title>랄랄루</title>
 
 </head>
 
 <body>
   <div class="logo">뭐하세요 그리세요</div>
-  <canvas class="canvas"></canvas>
+  <canvas class="canvas" height="600" width="600"></canvas>
 
   <!-- 리셋,업로드,세이브 버튼 -->
   <div class="b_button">
@@ -47,16 +30,20 @@
   <!-- 색깔 버튼 -->
   <section class="c_buttons">
     <div class="colors">
-      <button class="material-icons" style="color:red;">color_lens</button>
-      <button class="material-icons" style="color:orange;">color_lens</button>
-      <button class="material-icons" style="color:rgb(226, 226, 59);">color_lens</button>
-      <button class="material-icons" style="color:green;">color_lens</button>
-      <button class="material-icons" style="color:blue;">color_lens</button>
-      <button class="material-icons" style="color:navy;">color_lens</button>
-      <button class="material-icons" style="color:purple;">color_lens</button>
+      <button class="material-icons" style="color:black;" id="#black" >color_lens</button>
+      <button class="material-icons" style="color:red;" id="#red" >color_lens</button>
+      <button class="material-icons" style="color:orange;" id="#orange">color_lens</button>
+      <button class="material-icons" style="color:rgb(226, 226, 59);" id="#yellow">color_lens</button>
+      <button class="material-icons" style="color:green;" id="#green">color_lens</button>
+      <button class="material-icons" style="color:blue;" id="#blue">color_lens</button>
+      <button class="material-icons" style="color:navy;" id="#navy">color_lens</button>
+      <button class="material-icons" style="color:purple;" id="#purple"> color_lens</button>
     </div>
   </section>
 
+
+
+  <script src="./main.js"></script>
 </body>
 
 </html>
