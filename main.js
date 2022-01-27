@@ -8,9 +8,9 @@ const colors=document.querySelectorAll(".colors");
 let drawing = false; 
 
 //  굵기, 선, 색깔
-ctx.lineWidth=30;
-ctx.lineCap="round";
-ctx.strokeStyle="black";
+ctx.lineWidth=30;//굵기
+ctx.lineCap="round";//선 끝부분 스타일
+ctx.strokeStyle="black";//
 
 
 // 선 긋기
@@ -50,8 +50,57 @@ colors.forEach(colors=>{
   colors.addEventListener("click", changeColor);
 })
 
+// 굵기 변경
+
+
+const range=document.getElementById("control");
+
+if(range){
+  range.addEventListener("input",handleRange);
+
+}
+function handleRange(e){
+  const size=e.target.value;
+  ctx.lineWidth=size;
+}
+
+
 
 // 요소 삭제 버튼
-const remove=()=>{
-  document.getElementById("").remove();
+
+function remove(){
+  console.log("reset");
+  ctx.clearRect(0,0,canvas.width,canvas.height); // 핵심..
 }
+
+// 저장 버튼
+
+const save=document.getElementById("save");
+
+
+
+
+// // 이미지 업로드 버튼
+
+// function loadFile(input) {
+//   var file = input.files[0];	//선택된 파일 가져오기
+
+//   //미리 만들어 놓은 div에 text(파일 이름) 추가
+//   var name = document.getElementById('fileName');
+//   name.textContent = file.name;
+
+//   //새로운 이미지 div 추가
+//   var newImage = document.createElement("img");
+//   newImage.setAttribute("class", 'img');
+
+//   //이미지 source 가져오기
+//   newImage.src = URL.createObjectURL(file);   
+
+//   newImage.style.width = "70%";
+//   newImage.style.height = "70%";  
+//   newImage.style.objectFit = "contain";
+
+//   //이미지를 image-show div에 추가
+//   var container = document.getElementById('image-show');
+//   container.appendChild(newImage);
+// };

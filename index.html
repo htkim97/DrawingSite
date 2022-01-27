@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
   
-  <!-- 전역변수 -->
 
   
 <title>랄랄루</title>
@@ -20,15 +19,26 @@
   <div class="logo">뭐하세요 그리세요</div>
   <canvas class="canvas" height="600" width="900"></canvas>
 
+  
+
   <!-- 리셋,업로드,세이브 버튼 -->
   <div class="b_button">
     <button class="material-icons" id="remove" onclick="remove()">refresh</button>
-    <button class="material-icons">upload</button>
-    <button class="material-icons">save</button>
+    <button class="material-icons" id="upload" onclick="upload()">upload</button>
+    <button class="material-icons" id="save" onclick="save()">save</button>
+    <!-- <input type="file" accept="image/*" onchange="loadFile(this)"> -->
   </div>
+
+
+
+
+  
 
   <!-- 색깔 버튼 -->
   <section class="c_buttons">
+
+    
+
     <div class="colors">
       <button class="material-icons" style="color:black;" id="#black" >color_lens</button>
       <button class="material-icons" style="color:red;" id="#red" >color_lens</button>
@@ -39,7 +49,12 @@
       <button class="material-icons" style="color:navy;" id="#navy">color_lens</button>
       <button class="material-icons" style="color:purple;" id="#purple"> color_lens</button>
     </div>
+
+    
   </section>
+
+   <!-- 굵기 조절 -->
+  <input type="range" id="control" min="0.1" max="30" value="30" step="0.1">
 
 
 
