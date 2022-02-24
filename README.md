@@ -1,4 +1,4 @@
-![memo](https://user-images.githubusercontent.com/52130444/151510864-59822a22-ffea-4af2-ae54-c75809784f39.gif)
+![drawSite](https://user-images.githubusercontent.com/52130444/155481788-e122b797-864e-4bdc-8afe-d40de13d64bf.gif)
 
 자바스크립트 캔버스를 이용하여 제작하였으며, 색상의 아이콘을 클릭시 색이 바뀌고 리셋버튼과 삭제버튼 rangeControl를 사용하여 굵기 지정이 가능합니다.
 
